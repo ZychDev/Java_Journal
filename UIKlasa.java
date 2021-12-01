@@ -72,11 +72,9 @@ public class UIKlasa implements ActionListener {
                     jTable1.setRowSelectionInterval(r, r);
                     System.out.println(r);
                     
-
+                    frame.dispose();
+                    info_Student_IU test = new info_Student_IU(obiekt, Group, r);
                     
-                    
-                    
-
 
                 } else {
                     jTable1.clearSelection();

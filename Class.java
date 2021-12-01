@@ -16,6 +16,11 @@ public class Class {
         this.size = size;
     }
 
+    Student GetStudentFromList(int number)
+    {
+        return students.get(number);
+    }
+
     void addStudent(Student newStudent) {
         for (Student student : students) {
             if (student.Name.equals(newStudent.Name))
