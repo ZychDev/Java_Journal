@@ -17,7 +17,7 @@ import java.util.Map;
 import javax.swing.table.DefaultTableModel;
 
 
-public class UIKlasa implements ActionListener {
+public class Opis implements ActionListener {
 
     JFrame frame=new JFrame();
 
@@ -39,7 +39,7 @@ public class UIKlasa implements ActionListener {
     public Class obiekt;
 
        
-    UIKlasa(Class obiekt, ClassContainer Group)
+    Opis(Class obiekt, ClassContainer Group)
     {
         this.Group = Group;
         this.obiekt = obiekt;
@@ -64,6 +64,14 @@ public class UIKlasa implements ActionListener {
 
 
         jTable1.addMouseListener(new MouseAdapter() {
+
+
+
+            
+
+
+
+
             @Override
             public void mouseReleased(MouseEvent e) {
                 int r = jTable1.rowAtPoint(e.getPoint());
@@ -72,9 +80,8 @@ public class UIKlasa implements ActionListener {
                     jTable1.setRowSelectionInterval(r, r);
                     System.out.println(r);
                     
-
-                    
-                    
+                    frame.dispose();
+                    Opis test = new Opis(obiekt, Group);
                     
 
 
