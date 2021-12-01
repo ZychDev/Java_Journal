@@ -152,6 +152,18 @@ public class Class {
         return list;
     }
 
+    List<Student> sortByNameUI(List<Student> nowa) {
+        List<Student> list = nowa;
+        Collections.sort(list, Comparator.comparing((Student student) -> student.Name));
+        return list;
+    }
+
+    void SetStudentsList(List<Student> nowa)
+    {
+        this.students = nowa;
+        
+    }
+
     static class pointsComparator implements Comparator<Student>
     {
         public int compare(Student s1, Student s2)
